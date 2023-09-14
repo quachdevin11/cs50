@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Bubble sort has a O(n^2) and an Omega(n), therefore, it should have a much faster time when dealing with Sorted50000.txt compared to random50000.txt. This was the case and compared to the sorted50000.txt times of the other sorted algorithms, this was the second fastest which makes sense. As the slowest one should be selection sort as that does not leverage if the numbers are already sorted. Then the merge sort would be the fastest as everything has already been sorted.
+
+sort2 uses: Merge Sort
+
+How do you know?: Merge sort should have the fastest time when running through random50000.txt which sort2 was the fastest. Also, since it has a theta(n logn) the sorted and random text files should be similar in run times for sort2.
+
+sort3 uses: Selection Sort
+
+How do you know?: The biggest give away for selection sort is that it has theta(n^2) meaning that it does not leverage whether the numbers are already sorted or not. Therefore, the sorted list should take about the same time to run through as the random list's run time. The fact that it doesn't leverage the best case solution means that it will be running through all numbers pointlessly giving it the longest runtime.

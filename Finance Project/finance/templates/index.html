@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <form action="/" method="post">
+        <div class="mb-3">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stock Name</th>
+                        <th>Symbol</th>
+                        <th>Shares</th>
+                        <th>Price</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- TODO: Loop through the database entries to display them in this table -->
+                    {% for portfolio in portfolio %}
+                        <tr>
+                            <td>{{portfolio.symbol}}</td>
+                            <td>{{portfolio.symbol}}</td>
+                            <td>{{portfolio.shares}}</td>
+                            <td>{{portfolio.price}}</td>
+                            <td>{{portfolio.value}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <table1>
+                <tbody1>
+                    <tr>
+                        <td1><b>Cash: </b></td>
+                        <td1>{{cash}}</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td1><b>Total:</b></td>
+                        <td1>{{total}}</td>
+                    </tr>
+                </tbody1>
+            </table1>
+    </form>
+{% endblock %}

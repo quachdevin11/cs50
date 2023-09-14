@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Added Funds
+{% endblock %}
+
+{% block main %}
+    <form action="/add" method="post">
+        <div class="mb-3">
+            <b>{{value}} ADDED TO FUNDS</b>
+        </div>
+    </form>
+{% endblock %}
